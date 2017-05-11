@@ -1,0 +1,34 @@
+query Routes($goalsState: GoalStateEnum!, $teamId: String!) {
+    viewer {
+        team: findTeam(teamId: $teamId) {
+            goals: goals(first: 100, state: $goalsState) {
+                edges {
+                    node {
+                        id
+                        entityId
+                        name
+                        status
+                        lastUpdated
+                        companyGoal
+                        private
+                        state
+                        computedType
+                        computedAmountType
+                        computedProgressAmount
+                        computedStartingAmount
+                        computedGoalAmount
+                        endedAt
+                        ownersList {
+                            name
+                            id
+                        }
+                        companyGoal
+                        ownersList {
+                            id
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
