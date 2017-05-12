@@ -10,7 +10,9 @@ const argv = require('yargs')
     lib.getOkrTeam(argv.token, argv.teamId).then((result) => {
       console.log(JSON.stringify(result));
     }).catch((err) => {
-      console.log(JSON.stringify(err));
+      console.log(JSON.stringify({
+        error: err.message
+      }));
     });
   })
   .help()

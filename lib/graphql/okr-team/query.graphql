@@ -1,4 +1,4 @@
-query Routes($goalsState: GoalStateEnum!, $teamId: String!) {
+query OkrTeam($goalsState: GoalStateEnum!, $teamId: String!) {
     viewer {
         team: findTeam(teamId: $teamId) {
             goals: goals(first: 100, state: $goalsState) {
