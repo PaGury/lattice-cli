@@ -1,6 +1,6 @@
 {
   "name": "lattice-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "lattice-cli is a cli to retrieve latticehq data",
   "main": "lib/index.js",
   "engines": {
