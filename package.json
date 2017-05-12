@@ -4,7 +4,7 @@
   "description": "lattice-cli is a cli to retrieve latticehq data",
   "main": "lib/index.js",
   "engines": {
-    "node": "6"
+    "node": ">=6"
   },
   "scripts": {
     "test": "mocha **/*.specs.js"
